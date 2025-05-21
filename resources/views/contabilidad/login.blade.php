@@ -281,6 +281,7 @@
                 const userId = data.user.id;
 
                 localStorage.setItem('token', token);
+                localStorage.setItem('id',userId);
 
                 const rolUrl = `{{ config('app.url') }}/api/user_rol/${userId}`;
                 
@@ -331,7 +332,7 @@
                     icon: 'error',
                     title: data.message || 'Error al iniciar sesión',
                     showConfirmButton: false,
-                    timer: 1000
+                    timer: 2000
                 });
             }
         } catch (error) {
@@ -342,12 +343,11 @@
                 icon: 'error',
                 title: 'Error al conectar con el servidor',
                 showConfirmButton: false,
-                timer: 1000
+                timer: 2000
             });
         }
     });
 </script>
-
 
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

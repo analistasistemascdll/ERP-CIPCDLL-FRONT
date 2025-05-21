@@ -157,7 +157,7 @@
         <img src="{{ asset('img/aviso.jpeg') }}" alt="Imagen financiero">
       </div>
       <div class="transparent-div" id="div2" onclick="window.location.href='{{ route('contabilidad.login') }}'">
-        <img src="{{ asset('img/contabilidad.jpg') }}" alt="Imagen contabilidad">
+        <img src="{{ asset('img/Contabilidad.jpg') }}" alt="Imagen contabilidad">
       </div>
       <div class="transparent-div" id="div3">
         <img src="{{ asset('img/construccion.jpeg') }}" alt="Imagen colegiatura">
